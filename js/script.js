@@ -2,10 +2,12 @@ const btn = document.querySelector('button');
 
 
 btn.addEventListener('click', function(){
+    btn.classList.add('d-none');
     /* numero di quadratini da generare */
     const numSquare = 100;
     /* mi prendo la griglia di gioco */
     const playground = document.getElementById('playground');
+    playground.classList.remove('d-none');
     playground.innerHTML= '';
     /* ciclo per stampare i quadratini */
     for(let i = 0; i < numSquare; i++){
